@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <h1>hello world</h1> -->
+<!-- <img src="{{ api1.Poster }}" class="card-img" alt="{{ api.Source }}"> -->
+
+<div class="container">
+    <div class="card mb-3" style="max-width: 940px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ api.Poster }}" class="card-img" alt="{{ api.Source }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ api.Title }}</h5>
+                    <p class="card-text">
+                        <li><strong>Year :</strong>{{api.Year}}</li>
+                        <li><strong>Rated :</strong>{{api.Rated}}</li>
+                        <li><strong>Released :</strong>{{api.Released}}</li>
+                        <li><strong>Runtime :</strong>{{api.Runtime}}</li>
+                        <li><strong>Genre :</strong>{{api.Genre}}</li>
+                        <li><strong>Director :</strong>{{api.Director}}</li>
+                        <li><strong>Language :</strong>{{api.Language}}</li>
+                        <li><strong>Country :</strong>{{api.Country}}</li>
+                    </p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card mb-3" style="max-width: 940px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ api1.Poster }}" class="card-img" alt="{{ api1.Source }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ api1.Title }}</h5>
+                    <p class="card-text">
+                        <li><strong>Year :</strong>{{api1.Year}}</li>
+                        <li><strong>Rated :</strong>{{api1.Rated}}</li>
+                        <li><strong>Released :</strong>{{api1.Released}}</li>
+                        <li><strong>Runtime :</strong>{{api1.Runtime}}</li>
+                        <li><strong>Genre :</strong>{{api1.Genre}}</li>
+                        <li><strong>Director :</strong>{{api1.Director}}</li>
+                        <li><strong>Language :</strong>{{api1.Language}}</li>
+                        <li><strong>Country :</strong>{{api1.Country}}</li>
+                    </p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card mb-3" style="max-width: 940px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ api2.Poster }}" class="card-img" alt="{{ api2.Source }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ api2.Title }}</h5>
+                    <p class="card-text">
+                        <li><strong>Year :</strong>{{api2.Year}}</li>
+                        <li><strong>Rated :</strong>{{api2.Rated}}</li>
+                        <li><strong>Released :</strong>{{api2.Released}}</li>
+                        <li><strong>Runtime :</strong>{{api2.Runtime}}</li>
+                        <li><strong>Genre :</strong>{{api2.Genre}}</li>
+                        <li><strong>Director :</strong>{{api2.Director}}</li>
+                        <li><strong>Language :</strong>{{api2.Language}}</li>
+                        <li><strong>Country :</strong>{{api2.Country}}</li>
+                    </p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card mb-3" style="max-width: 940px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ api3.Poster }}" class="card-img" alt="{{ api3.Source }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ api3.Title }}</h5>
+                    <p class="card-text">
+                        <li><strong>Year :</strong>{{api3.Year}}</li>
+                        <li><strong>Rated :</strong>{{api3.Rated}}</li>
+                        <li><strong>Released :</strong>{{api3.Released}}</li>
+                        <li><strong>Runtime :</strong>{{api3.Runtime}}</li>
+                        <li><strong>Genre :</strong>{{api3.Genre}}</li>
+                        <li><strong>Director :</strong>{{api3.Director}}</li>
+                        <li><strong>Language :</strong>{{api3.Language}}</li>
+                        <li><strong>Country :</strong>{{api3.Country}}</li>
+                    </p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{{ api.Title }}
+{% endblock %}

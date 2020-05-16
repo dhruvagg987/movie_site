@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <h1>hello world</h1> -->
+
+<div class="container">
+    {{movie.Search}}
+    {%for movie in movie.Search%}
+    
+    <div class="card mb-3" style="max-width: 940px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ movie.Poster }}" class="card-img" alt="{{ movie.Source }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ movie.Title }}</h5>
+                    <p class="card-text">
+                        <li><strong>Year :</strong>{{movie.Year}}</li>
+                        {% if movie.Rated %}
+                        <li><strong>Rated :</strong>{{movie.Rated}}</li>
+                        {% endif %}
+                        {% if movie.Relesed %}
+                        <li><strong>Released :</strong>{{movie.Released}}</li>
+                        {% endif %}
+                        {% if movie.Runtime %}
+                        <li><strong>Runtime :</strong>{{movie.Runtime}}</li>
+                        {% endif %}
+                        {% if movie.Genre %}
+                        <li><strong>Genre :</strong>{{movie.Genre}}</li>
+                        {% endif %}
+                        {% if movie.Director %}
+                        <li><strong>Director :</strong>{{movie.Director}}</li>
+                        {% endif %}
+                        {% if movie.Language %}
+                        <li><strong>Language :</strong>{{movie.Language}}</li>
+                        {% endif %}
+                        {% if movie.Country %}
+                        <li><strong>Country :</strong>{{movie.Country}}</li>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- {{ movie.Search}} -->
+<!-- {{ Year}} -->
+
+<!-- <strong>Year :</strong>{{movie.Year}} -->
+
+{% endblock %}
